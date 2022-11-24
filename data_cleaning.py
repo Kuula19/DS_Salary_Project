@@ -65,3 +65,4 @@ df.Excel_yn.value_counts()
 df = df.drop("Unnamed: 0", axis=1)
 
 df.to_csv("Salary_data_cleaned.csv", index=False)
+df_out = pd.read_csv("Salary_data_cleaned.csv")
